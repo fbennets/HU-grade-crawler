@@ -57,3 +57,8 @@ Run
 python mech.py 
 ```
 in the project root to create the initial dataset. Afterwards push everything to a cheap server like [Uberspace](https://uberspace.de/en/) and set up a cron-job to run the script e.g. every ten minute during working hours.
+
+### Reset the script
+
+After a new grade was detected or if you run into errors you should reset the script. 
+Simply delete (or rename) the initial_table.html. The next time the script runs, a new inital_table.html will be generated. All following datasets will be compared to the new initial_table.html.
